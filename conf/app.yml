@@ -1,9 +1,8 @@
-#Service: This directs the traffic to a pod.
 apiVersion: v1
 kind: Service
 metadata:
   name: wil-playground
-  namespace: dev
+  namespace: dev2
 spec:
   selector:
     app: wil-playground
@@ -13,7 +12,6 @@ spec:
       targetPort: 8888
   type: LoadBalancer
 
-#A Kubernetes Deployment tells Kubernetes how to create or modify instances of the pods that hold a containerized application.
 ---
 apiVersion: apps/v1
 kind: Deployment
