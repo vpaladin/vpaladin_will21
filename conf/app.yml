@@ -2,7 +2,7 @@ apiVersion: v1
 kind: Service
 metadata:
   name: wil-playground
-  namespace: devhttps://github.com/vpaladin/vpaladin_will21/blob/main/conf/app.yml
+  namespace: devhttps://github.com/vpaladin/vpaladin_will21/conf/app.yml
 spec:
   selector:
     app: wil-playground
